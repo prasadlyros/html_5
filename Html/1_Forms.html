@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="frm" method="get" action="https://www.google.co.in/"  >
+      <table border="2">
+        <tr>
+          <td>Full Name</td>
+          <td><input type="text" name="fullName" value="" placeholder="eg.,Prasad" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="email" value="" /></td>
+        </tr>
+        <td>Phone Number</td>
+        <td><input type="number" name="phoneNumber" value="" /></td>
+        <tr>
+          <td>Age</td>
+          <td><input type="number" name="age" value="" min="0" max="40"/></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" value="" pattern="fill atleast 5-8 characters" /></td>
+        </tr>
+        <tr>
+          <td>Skills</td>
+          <td>
+            <input type="checkbox" name="skills" value="" /> Html
+            <input type="checkbox" name="skills" value="" /> JavaScript
+            <input type="checkbox" name="skills" value="" /> ReactJS
+            <input type="checkbox" name="skills" value="" /> MongoDB
+            <input type="checkbox" name="skills" value="" /> Express
+            <input type="checkbox" name="skills" value="" /> CSS
+            <input type="checkbox" name="skills" value="" /> Others
+          </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gender" value="" required /> Male
+            <input type="radio" name="gender" value="" required /> Female
+          </td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>
+            <select name="country">
+              <option value="">Choose country</option>
+              <option value="">India</option>
+              <option value="">China</option>
+              <option value="">Japan</option>
+              <option value="">USA</option>
+              <option value="">UK</option>
+              <option value="">Australia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td>
+            <textarea name="description"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
