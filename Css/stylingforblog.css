@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+} 
+   .box{
+       display:flex;
+       flex-direction:row;
+       justify-content:center;
+    }
+   
+   .article-1, .article-2, .article-3 {
+       border: 1px solid black;
+   }
+   
+ .image-1, .image-2, .image-3  {
+       background-color: lightgrey; 
+       width : 350px;
+       height : 335px;
+   }
+   
+   .content-1, .content-2, .content-3{
+     width:350px;
+     background-color: lightpink;
+   }
+   
+   .heading-1, .heading-2, .heading-3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        color: brown;
+   }
+   
+   .description-1, .description-2, .description-3 { 
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-weight: 100;
+       color: darkblue;
+   }
+   
+   .list-item-1, .list-item-2, .list-item-3, .list-item-4{
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-weight: 100;
+       color: darkblue;
+   }
+
+   header, footer{
+    background-color: lightgreen;
+    color: darkblue;
+    padding: 10px 0;
+}
+
+nav{
+    text-align: center;
+}
+.footermenu{
+    text-align: center;
+    list-style-type: none;
+}
+.imagemenu{
+    text-align: center;
+}
+.footermenu li, .imagemenu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.imagemenu img{
+    width: 30px;
+    height: 30px;
+}
+.footermenu li a{
+    color: black;
+    text-decoration: none;
+}
+.menu{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a{
+    color: rgb(16, 14, 14);
+    text-decoration: none;
+}
+
+.menu li a :hover{
+    background-color: darkorange;
+}
+/* dropdown */
+.dropdownmenu, .dropdownmenu1{
+    display: none; 
+    position: absolute;
+    background-color: rgb(0, 238, 255);
+    width: auto;
+}
+.dropdown1:hover .dropdownmenu1, .dropdownmenu1 li{
+    display: block;
+}
+.dropdownmenu1 li a{
+    width: 40px;
+    display: block;
+}
+
+.dropdown:hover .dropdownmenu, .dropdownmenu li{
+    display: block;
+}
+.dropdownmenu li a{
+    width: 100px;
+    display: block;
+}
+
+   
+   
+

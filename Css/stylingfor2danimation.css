@@ -1,0 +1,40 @@
+body {
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    background-color: aqua;
+    height: 100vh;
+    margin: 0;
+    perspective: 800px;
+} 
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: cube 2s linear infinite;
+}
+
+.box1 {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(12, 12, 12);
+    color: beige;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.box1:nth-child(1) {transform: translateZ(50px);}
+.box1:nth-child(2) {transform: rotateY(180deg) translateZ(50px);}
+.box1:nth-child(3) {transform: rotateY(90deg) translateZ(50px);}
+.box1:nth-child(4) {transform: rotateY(-90deg) translateZ(50px);}
+.box1:nth-child(5) {transform: rotateY(90deg) translateZ(50px);}
+.box1:nth-child(6) {transform: rotateY(-90deg) translateZ(50px);}
+
+@keyframes cube {
+    from {transform: rotateY(0deg);}
+    to {transform: rotate(360deg);}
+} 

@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    animation: movebox 2s  linear infinite;
+}
+
+  @keyframes movebox {
+  0%{
+    left: 0;
+  }
+  100%{
+    left: calc(75%);  
+  }
+} 

@@ -1,0 +1,40 @@
+.psuedo1{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid lightsteelblue;
+}
+
+.psuedo .psuedo1{
+    background-color: blueviolet;
+}
+
+.psuedo .psuedo1:hover{
+    background-color: #fef123;
+    color: black;
+}
+
+p::first-line{
+    font-weight: bolder;
+    /* color: red; */
+}   
+
+p:nth-child(odd){
+    /* color: blueviolet; */
+    font-weight: bold;
+}
+
+li:nth-child(odd){
+    color: brown;
+}
+
+.psuedo .psuedo1 box{
+    background-color: blue;
+}
+
+/* h1{
+    background: linear-gradient(red yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+

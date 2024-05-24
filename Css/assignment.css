@@ -1,0 +1,16 @@
+.container{
+    margin: 20px;
+    width: 75%;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+
+}
+
+label{
+    font-weight: bold;
+    color: lightsteelblue;
+}

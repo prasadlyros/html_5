@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer{
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 992px){
+    body{
+        background-color: red;
+    }
+    header, footer{
+        background-color: aqua;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    body{
+        background-color: orange;
+    }
+    header, footer{
+        background-color: turquoise;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    body{
+        background-color: yellowgreen;
+    }
+    header, footer{
+        background-color: blueviolet;
+    }
+    
+}
