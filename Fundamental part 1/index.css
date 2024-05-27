@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;
+    display: flex;
+}
+
+h1{
+    background: linear-gradient(red, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color : transparent;
+}
