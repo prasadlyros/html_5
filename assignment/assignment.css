@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+    display: flex;
+}
+
+p{
+    background: linear-gradient(red, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color : transparent;
+    font-size: 50px;
+}
