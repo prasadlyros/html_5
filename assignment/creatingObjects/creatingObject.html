@@ -1,0 +1,56 @@
+<!-- Create an object representing a car with properties (make, model, year) and methods (start, stop). Implement methods to access and modify these properties. Demonstrate accessing and changing properties using dot and bracket notation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Object</title>
+    <style>
+      .objects{
+        position: absolute;
+        left: 20%;
+        bottom: 45%;
+      }
+      body{
+        background-color: lightsteelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="objects">
+      <h1>Creating objects, Methods and Accessing them </h1>
+    </div>
+    <script>
+      const car = {
+        make: "Hundai",
+        model: "i20",
+        year: 2016,
+
+        // accessing object properties
+        start() {
+          console.log(
+            `The model ${this.model} is from the makers of ${this.make} in the year ${this.year}`
+          );
+        },
+
+        stop() {
+          console.log(
+            `And then the ${this.make} stopped making this ${this.model} in the year 2020`
+          );
+        },
+      };
+      // call object methods
+      car.start();
+      car.stop();
+      //accessing and changing properties 
+      console.log(car.make);
+      //changing properties with dot notation
+      car.make = 'tesla';
+      console.log(car.make);
+      //changing properties with bracket notation
+      car['model'] = 'Tesla Model3';
+      console.log(car.model);
+    </script>
+  </body>
+</html>

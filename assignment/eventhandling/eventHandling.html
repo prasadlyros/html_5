@@ -1,0 +1,46 @@
+<!-- Create a simple webpage with a button and a text input field. Write JavaScript to handle the button click event to change the text of a paragraph element to the value entered in the input field. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      background-color: bisque;
+    }
+    .login {
+      text-align: center;
+      justify-content: center;
+      color: black;
+    }
+    p {
+      font-size: 20px;
+    }
+    button {
+      background-color: lightskyblue;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="login">
+      <input type="text" id="textBox" placeholder="enter text" />
+      <button type="text" id="button">Submit</button>
+      <p id="text">Initial text</p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const inputText = document.getElementById("textBox");
+        const button = document.getElementById("button");
+        const initialText = document.getElementById("text");
+
+        button.addEventListener("click", function () {
+          const changedText = inputText.value;
+          initialText.textContent = changedText;
+          inputText.value = "";
+        });
+      });
+    </script>
+  </body>
+</html>

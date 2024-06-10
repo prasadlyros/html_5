@@ -1,0 +1,51 @@
+<!-- Write an IIFE(Immediately Invoking Function Expressions) that calculates and logs the square of a number immediately after defining the function. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+    }
+    .iife{
+        position: absolute;
+        top: 50%;
+        left: 37%;
+    }
+    #button{
+        background-color: lightcyan;
+    }
+
+</style>
+<body>
+    <div class="iife">
+        <input type="text" id="takingValue">
+        <button id="button">Submit</button>
+        <P id="output"> </P>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const inputText = document.getElementById("takingValue");
+            const button = document.getElementById("button");
+            const outPut = document.getElementById("output");
+
+            button.addEventListener("click", function(){
+                const newValue = inputText.value;
+                outPut.textContent = (function(num){
+                    const value = num * num;
+                    console.log(`the square of a ${newValue} is ${value}`);
+                })(newValue);
+                inputText.value = " ";
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!--  (function(num){
+            const value = num * num ;
+            console.log(value);
+        })(55); -->
