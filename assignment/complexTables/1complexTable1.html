@@ -1,0 +1,40 @@
+<!-- Create an HTML table that contains another table within one of its cells. The outer table should have 3 rows and 3 columns. The nested table should be placed in the middle cell (2nd row, 2nd column) and should have 2 rows and 2 columns. Include appropriate headers and data for both tables. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td>Row1</td>
+        <td>Row1</td>
+        <td>Row1</td>
+      </tr>
+      <tr>
+        <td>Row2</td>
+        <td>
+          <table border="3px">
+            <tr>
+                <td>inrow1</td>
+                <td>inrow1</td>
+            </tr>
+            <tr>
+                <td>inrow2</td>
+                <td>inrow2</td>
+            </tr>
+          </table>
+        </td>
+        <td>Row2</td>
+      </tr>
+      <tr>
+        <td>Row3</td>
+        <td>Row3</td>
+        <td>Row3</td>
+      </tr>
+    </table>
+  </body>
+</html>
