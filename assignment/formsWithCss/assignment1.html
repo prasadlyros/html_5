@@ -1,0 +1,112 @@
+<!-- Create a responsive registration form with advanced features and validation using HTML5 and CSS3.
+
+Requirements:
+1. Form Structure:
+   - First Name, Last Name (text inputs)
+   - Username (text input)
+   - Email (email input)
+   - Password (password input)
+   - Confirm Password (password input)
+   - Date of Birth (date input)
+   - Gender (radio buttons: Male, Female, Other)
+   - Country (dropdown)
+   - Interests (checkboxes: multiple options)
+   - Profile Picture (file upload)
+   - Short Bio (textarea)
+   - Terms and Conditions (checkbox)
+   - Submit and Reset buttons
+
+2. HTML5 Features:
+   - Use the `required` attribute to make fields mandatory.
+   - Use the `pattern` attribute for custom validation on Username (e.g., only alphanumeric characters).
+   - Use `maxlength` and `minlength` for Username and Password.
+   - Use `type="email"` for the email input.
+   - Use `type="date"` for the date of birth.
+   - Use `input` elements with the `type="radio"` for gender selection.
+   - Use `input` elements with the `type="checkbox"` for interests.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="assignment1.css">
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <div class="values">
+            <label for="text" class="firstname" id="firstname">First Name</label>
+            <input type="text" class="name"  id="focus" placeholder="enter your first name" pattern="^[A-Za-z0-9]{4,16}$" maxlength="16" required />
+        </div>
+        <div class="values">
+            <label for="text" class="lastname" id="lastname">Last Name</label>
+            <input type="text"  class="name" id="focus" placeholder="enter your last name" pattern="^[A-Za-z0-9]{4,16}$" maxlength="16" required />
+        </div>
+        <div class="values">
+            <label for="text" class="username" id="username">Username</label>
+            <input type="text"  class="name" id="focus" placeholder="enter your username" pattern="[(a-zA-Z\d\!@#\$%\^\&*\)\(+=._-)]{8,16}" minlength="4" maxlength="16" required />
+        </div>
+        <div class="values">
+                <label for="email" class="emailAddress" id="emailAddress">Email</label>
+                <input type="email" class="name" id="focus"  pattern="[(a-zA-Z\d\!@#\$%\^\&*\)\(+=._-)]{8,16}" placeholder="enter your email" required/>
+        </div>
+        <div class="values">
+                <label for="password" class="password" id="password">Password</label>
+                <input type="password"  class="name"name="" id="focus"  pattern="[(a-zA-Z\d\!@#\$%\^\&*\)\(+=._-)]{8,16}" placeholder="atleast 8 characters" minlength="4" maxlength="16" required>
+            </div>
+            <div class="values">
+            <label for="password" class="password" id="password">Confirm Password</label>
+            <input type="password" class="name" id="focus" placeholder="re-enter the password" pattern="[(a-zA-Z\d\!@#\$%\^\&*\)\(+=._-)]{8,16}" minlength="4" maxlength="16" required/>
+        </div>
+        <div class="values">
+                <label for="date" class="date" id="date">D.O.B :</label>
+                <input type="date" />
+            </div>
+            <div class="values">
+                <label for="text">Gender :</label>
+                <input type="radio" name="gender" id="radio"/>Male
+                <input type="radio" name="gender" id="radio"/>Female
+                <input type="radio" name="gender" id="radio"/>Others
+            </div>
+            <div class="values">
+                <label for="country">country</label>
+                <select name="country" id="country">
+                    <option value="">Choose country</option>
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">JAPAN</option>
+                    <option value="">Australia</option>
+                    <option value="">CHINA</option>
+                    <option value="">Brazil</option>
+                </select>
+            </div>
+            <div class="values">
+            <label for="interest">Interest</label> 
+                <input type="checkbox" class="checkbox" name="Interest"/>Reading
+                <input type="checkbox" class="checkbox" name="Interest"/>Booking
+                <input type="checkbox" class="checkbox" name="Interest"/>Coding
+                <input type="checkbox" class="checkbox" name="Interest"/>Others
+            </div>
+            <div class="values">
+                <label for="profile">Photo</label>
+                <input type="file" name="fileupload" class="photo" />
+            </div>
+        <div class="values">
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio"></textarea>
+    </div>
+        <div class="values">
+                <input type="checkbox" class="terms" required>
+                <label for="terms" class="terms">Terms & Conditions</label>
+            </div>
+            <div class="values">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+    </form>
+    </div>
+  </body>
+</html>
